@@ -98,6 +98,17 @@
     display: block;
 }
 
+.row{
+    display: flex;
+}
+
+.random{
+    position: relative;
+    text-align: left;
+    flex: 33.33%;
+    padding: 5px;
+    width: 100%;
+}
 
 .picture{
     margin-top: 200px;
@@ -105,12 +116,38 @@
     height: 700px;
 }
 
+.left{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    top: 55%;
+    left: 10%;
+    color: white;
+}
+
+.left1{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    top: 65%;
+    left: 10%;
+    color: black;
+}
+
+.left2{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    top: 65%;
+    left: 10%;
+    color: red;
+    word-spacing: 20px;
+}
+
 .about{
     height: 500px;
-
     display: flex;
     flex-direction: row;
-    
     color: black;
 }
 
@@ -129,7 +166,7 @@
     font-size: 34px;
     margin-bottom: 20px;
     padding-left: 250px;
-    font-style: italic;
+    font-style: bold;
     color: black;
 }
 
@@ -169,7 +206,7 @@
     font-size: 34px;
     margin-bottom: 20px;
     text-align: center;
-    font-style: italic;
+    font-style: bold;
     color: black; 
 }
 
@@ -188,7 +225,7 @@
     font-size: 34px;
     margin-bottom: 20px;
     text-align: center;
-    font-style: italic;
+    font-style: bold;
     color: black;
 }
 .our-gallery{
@@ -205,6 +242,16 @@
     display: inline-block;
     width: 100%;
     vertical-align: top;
+}
+
+.locate-us{
+    margin-top: 30px;
+    height: 50px;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: bold;
+    color: black;
 }
 
 .contacting-us{
