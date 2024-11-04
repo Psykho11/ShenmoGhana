@@ -12,10 +12,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    cursor: pointer;
-    
-    
+    cursor: pointer; 
 }
+
+li {
+    display: inline;
+  }
+
 
 .home{
     position: relative;
@@ -102,6 +105,18 @@
     display: flex;
 }
 
+
+.office{
+    width: 50%;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    border-radius: 8px;
+    vertical-align: top;
+}
+
+
 .random{
     position: relative;
     text-align: left;
@@ -113,7 +128,7 @@
 .picture{
     margin-top: 200px;
     width:1240px;
-    height: 700px;
+    height: 500px;
 }
 
 .left{
@@ -152,8 +167,8 @@
 }
 
 .about-image{
-    width: 50px;
-    margin-top: 20px;
+    width: 20px;
+    margin-top: 30px;
     
 }
 
@@ -165,17 +180,40 @@
 .us{
     font-size: 34px;
     margin-bottom: 20px;
-    padding-left: 250px;
+    padding-left: 180px;
     font-style: bold;
     color: black;
+    
+}
+
+.us-1{
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: red;
+}
+
+.us-2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 .ghana{
     font-size: 34px;
     margin-bottom: 60px;
-    padding-left: 200px;
+    padding-left: 180px;
     color: black;
 }
+
+.ghana-1{
+    font-size: 27px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: blue;  
+}
+
 
 .note{
     font-size: 22;
@@ -228,6 +266,8 @@
     font-style: bold;
     color: black;
 }
+
+
 .our-gallery{
     width: 29%;
     display: inline-block;
@@ -261,8 +301,8 @@
 
 .cont-act{
     padding: 20px;
-    padding-bottom: 0px;
-    width:1215px;
+    padding-bottom: 1px;
+    width:1225px;
     height: 400px;
       
 }
@@ -278,13 +318,13 @@
     background-color:transparent;
     color: black;
     position: absolute;
-    bottom: -9px;
+    bottom: 15px;
     left: 20px;
-   
 }
 
 .one{
     text-align: center; 
+    color: black;
 }
 
 .four{
@@ -292,4 +332,251 @@
     color: white;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+    
+}
+
+.fa-youtube{
+    background: rgb(249, 86, 86);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+
+  * {box-sizing: border-box}
+
+
+.container {
+  padding: 16px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.signin1{
+    background-color: hwb(143 1% 51%);
+    text-align: center;
+    color: black;
+}
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .terms{
+    font-size: 80px;
+    width: 100px;
+     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+
+  .container-1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.stage {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.stage-1{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 60px;
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.stage:hover {
+    transform: scale(1.05);
+}
+
+.stage-1:hover{
+    transform: scale(1.05);
+}
+
+.beginners {
+    border-left: 5px solid #4CAF50;
+}
+
+.intermediate {
+    border-left: 5px solid #2196F3;
+}
+
+.advanced {
+    border-left: 5px solid #f44336;
+}
+
+.online{
+    border-left: 5px solid #e7f217;
+}
+
+.summer{
+    border-left: 5px solid #820479;
+}
+
+.private{
+    border-left: 5px solid #980628;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+#slideshow {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 550px;
+}
+
+.active {
+    display: block;
+}
+
+
+.video-container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+button {
+    margin: 5px;
+}
 

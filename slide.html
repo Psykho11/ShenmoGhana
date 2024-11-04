@@ -1,0 +1,52 @@
+
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        #slideshow {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="slideshow">
+        <img class="slide active" src="images/IMG_1547.jpg"> 
+        <img class="slide" src="images/IMG_1582.jpg">
+        <img class="slide" src="images/IMG_1593.jpg">
+        
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
