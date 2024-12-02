@@ -11,34 +11,10 @@
         <div class="main-header">
             <div class="header">
                 <div class="left-section">Hello! Welcome to Shenmo Education Ghana</div>
-                <div class="right-section">
-                    <div>
-                        <button class="search-button">Search 
-                            <img class="search" src="thumbnails/icon-search.svg">
-                        </button>
-                    </div>
-    
-                    <div>
-                        <button class="my-account-button">My Account
-                            <img class="my-account" src="thumbnails/icon-account.svg">
-                        </button>
-                    </div>
-                     
-                    <div>
-                        <button class="my-cart-button">My Cart
-                            <img class="cart" src="thumbnails/icon-cart.svg">
-                        </button> 
-                    </div>
-                        
-                    <div>
-                       <button class="my-eshop-button">My Eshop
-                        <img class="eshop" src="thumbnails/icon-eshop.svg">
-                       </button>
-                    </div>
-     
-                </div>
-               
+                <div class="right-section"></div>
             </div>
+
+            
             <section class="sub-head">
                 <img src="thumbnails/logo.png">
                 <div>
@@ -103,10 +79,10 @@
 
          <div class="all-pics">BEGINNERS</div>
          <div id="slideshow" >
-            <img class="slide active" src="images/IMG-20241101-WA0002.jpg"> 
-            <img class="slide" src="images/IMG-20241101-WA0003.jpg">
-            <img class="slide" src="images/IMG-20241101-WA0004.jpg">
-            <img class="slide" src="images/IMG-20241101-WA0001.jpg">    
+            <img class="slide1 active" src="images/IMG-20241101-WA0002.jpg"> 
+            <img class="slide1" src="images/IMG-20241101-WA0003.jpg">
+            <img class="slide1" src="images/IMG-20241101-WA0004.jpg">
+            <img class="slide1" src="images/IMG-20241101-WA0001.jpg">    
         </div>
 
         <div class="all-pics">INTERMEDIATES</div>
@@ -185,7 +161,7 @@
                     <p class="one">
                         0500926000 <br>
                         0249460223 <br>
-                        shenmoghana@gmail.com 
+                        <a href="mailto:shenmoghana@gmail.com">shenmoghana</a> 
                     </p>
                 </button>
                 
@@ -200,24 +176,21 @@
             
 
             <script>
-                let currentSlide = 0;
-                const slides = document.querySelectorAll('.slide');
-            
-                function showSlide(index) {
-                    slides.forEach((slide, i) => {
-                        slide.classList.toggle('active', i === index);
-                    });
-                }
-            
-                function nextSlide() {
-                    currentSlide = (currentSlide + 1) % slides.length;
-                    showSlide(currentSlide);
-                }
-            
-                setInterval(nextSlide, 3000);
+               let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide1');
 
+    function showSlide(index) {
+        slides.forEach((slide1, i) => {
+            slide1.classList.toggle('active', i === index);
+        });
+    }
 
-                
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 3000);
             </script>
             
     </body>

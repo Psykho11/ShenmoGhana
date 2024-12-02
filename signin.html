@@ -1,37 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>SHENMO GHANA</title>
-    
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/page.css">
-</head>
-<body>
-  <form action="action_page.php">
-    <div class="container">
-      
-  
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" id="email" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-  
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-      <hr>
-      
-      <div class="container signin1">
-        <p> <a href="Home.html">Sign in</a>.</p>
+  <head>
+    <title>SHENMO LOGIN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="container-fluid">
+      <div class="row" style="height: 100vh;">
+        <div class="col page-text " >
+          <p><img class="col page-text" src="images/footer-logo.png"></p>
+        </div>
+
+        <div class="col signup-col">
+
+          <div class="signup">
+            <h6>Login to your account</h6>
+
+          <form>
+
+            <div class="form-group">
+              <label for="email"> Email</label>
+              <input
+                id="email"
+                class="form-control"
+                type="text"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password"> Password</label>
+              <input
+                id="password"
+                class="form-control"
+                type="password"
+                placeholder="password"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirm password">Confirm Password</label>
+              <input
+                id="confirm password"
+                class="form-control"
+                type="password"
+                placeholder="confirm password"
+                required
+              />
+            </div>
+
+            <button id="submit" class="btn btn-primary btn-block" disabled>
+              Login Now
+            </button>
+          </form>
+
+         
+
+          <div>
+            Dont Have An Account? <a href="contact.html"> Sign Up</a>
+          </div>
+          </div>
+
+        </div>
       </div>
-     
+    </section>
+
+    
+
+    <script>
+      const submitFormButton = document.getElementById('submit')
+const confirmPasswordInput = document.getElementById('confirm password')
+const passwordInput = document.getElementById('password')
+const emailInput= document.getElementById('email')
+
+
+
+function onFormChange(){
+  const isEmailEmpty = emailInput.value === ""
+  const isPasswordEmpty =passwordInput.value === ""
+  const isConfirmPasswordEmpty = confirmPasswordInput.value === ""
+ 
+
+ 
+
+  if(passwordInput.value === confirmPasswordInput.value && !isConfirmPasswordEmpty && !isPasswordEmpty && !isEmailEmpty){
+    submitFormButton.disabled = false;
+  }else{
+    submitFormButton.disabled = true;
+  }
   
-  </form>
-</body>
+}
+
+
+function submitForm(e){
+  e.preventDefault()
+  console.log('click');
+  
+}
+
+
+
+submitFormButton.addEventListener("click",submitForm)
+emailInput.addEventListener("input", onFormChange)
+passwordInput.addEventListener("input", onFormChange)
+confirmPasswordInput.addEventListener("input", onFormChange)
+
+    </script>
+
+
+  </body>
 </html>
-
-
-
-
-
