@@ -22,7 +22,7 @@ function validateForm(event) {
   }
 
   // All validations passed, submit the form
- // alert("Account created successfully!");
+ alert("Account created successfully!");
   // You can replace the alert with form submission if needed
   // window.location.href = "signin.html";
   return true;
