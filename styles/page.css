@@ -80,7 +80,7 @@ li {
     display: flex;
     flex-direction: row;
     color: black;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .about-image {
@@ -401,7 +401,7 @@ p {
 .slide1 {
     display: none;
     width: 100%;
-    height: 550px;
+    height: 400px;
 }
 
 .item {
