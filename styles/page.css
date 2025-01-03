@@ -451,8 +451,13 @@ button {
 /* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
     .sub-head {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        cursor: pointer;
+        
+      
     }
 
     .office, .stage, .stage-1 {
