@@ -55,7 +55,7 @@ li {
 .picture {
     margin-top: 100px;
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 .left1, .left2 {
@@ -93,14 +93,14 @@ li {
 }
 
 .us, .ghana {
-    font-size: 34px;
+    font-size: 20px;
     margin-bottom: 20px;
     padding-left: 180px;
     color: black;
 }
 
 .us-1, .us-2, .ghana-1 {
-    font-size: 34px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -155,10 +155,10 @@ li {
 }
 
 .all-pics, .locate-us {
-    margin-top: 30px;
+    margin-top: 10px;
     height: 50px;
-    font-size: 34px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
     text-align: center;
     color: black;
     padding: 10px;
@@ -166,7 +166,7 @@ li {
 
 .our-gallery {
     width: 29%;
-    display: inline-block;
+    display: inline-flex;
     margin: 15px 25px 20px 25px;
     border-radius: 8px;
     vertical-align: top;
@@ -331,7 +331,7 @@ form.example::after {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .stage, .stage-1 {
