@@ -484,9 +484,9 @@ button {
     }
 
     .our-gallery {
-        width: 385px;
+        width: 375px;
         display: inline-flex;
-        margin: 20px;
+        margin: 15px;
         border-radius: 8px;
         vertical-align: top;
         
