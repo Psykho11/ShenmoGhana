@@ -117,7 +117,7 @@ li {
 }
 
 .note {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 20px;
     padding-left: 180px;
 }
@@ -403,7 +403,7 @@ p {
 .slide1 {
     display: none;
     width: 100%;
-    height: auto;
+    height: 550px;
     margin: auto;
 }
 
@@ -489,6 +489,12 @@ button {
         padding-left: 20px;
     }
 
+    .note {
+        font-size: 15px;
+        margin-bottom: 20px;
+        padding-left: 180px;
+    }
+
     .our-gallery {
         width: 375px;
         display: inline-flex;
@@ -500,6 +506,13 @@ button {
 
     .mission-text {
         margin-left: 20px;
+    }
+
+    .slide1 {
+        display: none;
+        width: 100%;
+        height: auto;
+        margin: auto;
     }
 
     .cont-act {
