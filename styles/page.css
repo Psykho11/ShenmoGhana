@@ -55,7 +55,7 @@ li {
 .picture {
     margin-top: 100px;
     width: 100%;
-    height: 400px;
+    height:auto ;
 }
 
 .left1, .left2 {
@@ -115,8 +115,8 @@ li {
 }
 
 .note {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 15px;
+    margin-bottom: 20px;
     padding-left: 180px;
 }
 
@@ -140,7 +140,7 @@ li {
 }
 
 .mission {
-    font-size: 34px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
     color: black;
@@ -165,9 +165,9 @@ li {
 }
 
 .our-gallery {
-    width: 29%;
+    width: 275px;
     display: inline-flex;
-    margin: 15px 25px 20px 25px;
+    margin: 10px;
     border-radius: 8px;
     vertical-align: top;
 }
@@ -401,11 +401,12 @@ p {
 .slide1 {
     display: none;
     width: 100%;
-    height: 400px;
+    height: auto;
+    margin: auto;
 }
 
 .item {
-    max-width: 1000%;
+    max-width: 100%;
 }
 
 .active {
@@ -429,7 +430,8 @@ button {
 
 .carousel-control {
     width: 0%;
-    margin: 10px;
+    margin: 50px;
+    height: 100%;
 }
 
 .signup {
