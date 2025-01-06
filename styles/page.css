@@ -484,12 +484,12 @@ button {
     }
 
     .our-gallery {
-        width: 400px;
+        width: 390px;
         display: inline-flex;
         margin: 20px;
         border-radius: 8px;
         vertical-align: top;
-       
+        
     }
 
     .mission-text {
