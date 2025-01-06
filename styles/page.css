@@ -13,6 +13,7 @@
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .img{
@@ -27,7 +28,8 @@ li {
 
 .home, .shenmo, .programs, .gallery, .partnership, .contact {
     position: relative;
-    display: inline-block;
+    display: flex;
+  
 }
 
 .row {
