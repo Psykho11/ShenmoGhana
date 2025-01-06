@@ -13,7 +13,7 @@
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
-    font-size: 12px;
+   
 }
 
 .img{
@@ -460,7 +460,7 @@ button {
         justify-content: space-between;
         padding: 10px;
         cursor: pointer;
-        
+        font-size: 12px;
       
     }
 
@@ -481,6 +481,15 @@ button {
 
     .us, .ghana, .note {
         padding-left: 20px;
+    }
+
+    .our-gallery {
+        width: 390px;
+        display: inline-flex;
+        margin: 20px;
+        border-radius: 8px;
+        vertical-align: top;
+        font-size: 12px;
     }
 
     .mission-text {
