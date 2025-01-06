@@ -430,8 +430,8 @@ button {
 
 .carousel-control {
     width: 0%;
-    margin: 50px;
-    height: 100%;
+    margin: auto;
+    height: auto;
 }
 
 .signup {
