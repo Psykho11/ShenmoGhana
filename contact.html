@@ -113,7 +113,7 @@
               <div class="form-group">
                 <label for="confirm password">Confirm Password</label>
                 <input
-                  id="confirm password"
+                  id="confirm-password"
                   class="form-control"
                   type="password"
                   placeholder="confirm password"
@@ -167,52 +167,68 @@
     </div> 
 </div>
 
-<SCript>
+<script>
   
-const submitFormButton = document.getElementById('submit')
-const confirmPasswordInput = document.getElementById('confirm password')
-const passwordInput = document.getElementById('password')
-const emailInput= document.getElementById('email')
-const firstNameInput = document.getElementById('first-name')
-const lastNameInput = document.getElementById('last-name')
+  const submitFormButton = document.getElementById('submit');
+  const confirmPasswordInput = document.getElementById('confirm-password');
+  const passwordInput = document.getElementById('password');
+  const emailInput = document.getElementById('email');
+  const firstNameInput = document.getElementById('first-name');
+  const lastNameInput = document.getElementById('last-name');
 
+  
+  function isValidEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailPattern.test(email);
+  }
 
-function onFormChange(){
-  const isEmailEmpty = emailInput.value === ""
-  const isPasswordEmpty =passwordInput.value === ""
-  const isConfirmPasswordEmpty = confirmPasswordInput.value === ""
-  const isFirstNameEmpty = firstNameInput.value === ""
-  const isLastNameEmpty = lastNameInput.value === ""
+  
+  function onFormChange() {
+    const isEmailEmpty = emailInput.value === "";
+    const isPasswordEmpty = passwordInput.value === "";
+    const isConfirmPasswordEmpty = confirmPasswordInput.value === "";
+    const isFirstNameEmpty = firstNameInput.value === "";
+    const isLastNameEmpty = lastNameInput.value === "";
+
+    const isEmailValid = isValidEmail(emailInput.value); 
+
+    
+    if (
+      passwordInput.value === confirmPasswordInput.value && 
+      !isPasswordEmpty &&
+      !isConfirmPasswordEmpty &&
+      !isFirstNameEmpty &&
+      !isLastNameEmpty &&
+      !isEmailEmpty &&
+      isEmailValid 
+    ) {
+      submitFormButton.disabled = false; 
+    } else {
+      submitFormButton.disabled = true; 
+    }
+  }
 
  
+  function submitForm(e) {
+    e.preventDefault();
 
-  if(passwordInput.value === confirmPasswordInput.value && !isConfirmPasswordEmpty && !isPasswordEmpty && !isFirstNameEmpty && !isLastNameEmpty && !isEmailEmpty){
-    submitFormButton.disabled = false;
-  }else{
-    submitFormButton.disabled = true;
+   
+    localStorage.clear();
+
+   
+    alert('Account Registered successfully');
+    window.location.href = "mailto:shenmoghana@gmail.com";
   }
+
   
-}
+  submitFormButton.addEventListener("click", submitForm);
+  emailInput.addEventListener("input", onFormChange);
+  passwordInput.addEventListener("input", onFormChange);
+  confirmPasswordInput.addEventListener("input", onFormChange);
+  firstNameInput.addEventListener("input", onFormChange);
+  lastNameInput.addEventListener("input", onFormChange);
+</script>
 
-
-function submitForm(e){
-  e.preventDefault()
-
-  localStorage.clear();
-
-  alert('Account Registered successfully')
-  window.location.href = "mailto:shenmoghana@gmail.com";
-}
-
-
-
-submitFormButton.addEventListener("click",submitForm)
-emailInput.addEventListener("input", onFormChange)
-passwordInput.addEventListener("input", onFormChange)
-confirmPasswordInput.addEventListener("input", onFormChange)
-firstNameInput.addEventListener("input", onFormChange)
-lastNameInput.addEventListener("input", onFormChange) 
-</SCript>
 
 
 
