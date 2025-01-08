@@ -608,7 +608,7 @@ h1 {
 }
 
 /* Mobile View - Stacks team members in a column */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .team-members {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -617,7 +617,7 @@ h1 {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .team-member {
