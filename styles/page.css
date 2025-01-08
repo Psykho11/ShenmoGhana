@@ -587,7 +587,7 @@ h1 {
 
 /* Text content: Name and Position */
 .team-member .content {
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .team-member h3 {
@@ -621,8 +621,8 @@ h1 {
     }
 
     .team-member {
-        padding: 15px;
-        height: 300px; /* Adjust height for small devices */
+        padding: 1px;
+        height: 250px; /* Adjust height for small devices */
     }
 
     .team-member img {
