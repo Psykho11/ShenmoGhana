@@ -727,8 +727,10 @@ h1 {
 }
 
 .card-link:hover{
-    background-color: #555;
+    color: dodgerblue;
+    text-decoration: none;
 }
+
 
 
 
