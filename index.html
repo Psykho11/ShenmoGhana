@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SHENMO GHANA</title>
-    <meta charset="UTF-8">
+    <title>Loading...</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
-        /* Full-screen Preloader */
+        /* Full-Screen Preloader */
         body {
             margin: 0;
             display: flex;
@@ -16,40 +17,57 @@
             flex-direction: column;
         }
 
-        /* Spinner Animation */
-        .loader {
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #3498db;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1s linear infinite;
+        /* Preloader Image */
+        #preloader img {
+            width: 120px; /* Adjust as needed */
+            height: auto;
+            margin-bottom: 20px;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        /* Progress Line Container */
+        .progress-container {
+            width: 100%;
+            max-width: 400px;
+            height: 4px; /* Thin line */
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
         }
 
-        /* Loading Text */
-        .loading-text {
-            margin-top: 15px;
-            font-size: 18px;
-            color: #333;
-            font-family: Arial, sans-serif;
+        /* Progress Line */
+        .progress-line {
+            width: 0%;
+            height: 100%;
+            background-color: #3498db;
+            transition: width 0.10s ease-in-out;
         }
     </style>
 </head>
 <body>
 
-    <div class="loader"></div>
-    <p class="loading-text">Loading...</p>
+    <div id="preloader">
+        <img src="thumbnails/logo.png" alt="Loading...">  <!-- Change image as needed -->
+        <div class="progress-container">
+            <div class="progress-line" id="progressLine"></div>
+        </div>
+    </div>
 
     <script>
-        // Redirect to the main page after 3 seconds
-        setTimeout(function () {
-            window.location.href = "home.html"; // Change to your main page
-        }, 3000);
+        let progress = 0;
+        const progressLine = document.getElementById("progressLine");
+
+        function updateProgress() {
+            if (progress < 100) {
+                progress += 1;
+                progressLine.style.width = progress + "%";
+                setTimeout(updateProgress, 30); // Adjust speed
+            } else {
+                window.location.href = "home.html"; // Redirect to main page
+            }
+        }
+
+        updateProgress();
     </script>
 
 </body>
