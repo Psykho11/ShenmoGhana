@@ -41,8 +41,9 @@ li {
 .office {
     width: 50%;
     display: inline-block;
-    margin: 15px 25px 20px 25px;
+    margin: 10px 25px 20px 25px;
     vertical-align: top;
+    
 }
 
 .random {
@@ -81,7 +82,8 @@ li {
     display: flex;
     flex-direction: row;
     color: black;
-    margin-top: 20px;
+    margin-top: 15px;
+   
 }
 
 .about-image {
